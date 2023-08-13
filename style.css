@@ -1,0 +1,687 @@
+/* reset css */
+html,body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+    color: #282828	;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dosis:wght@300&family=M+PLUS+Rounded+1c:wght@100;300;400;700&family=Mukta:wght@200;300;400;600;700&family=Nunito+Sans:wght@200;300;400;600;700&family=Orbitron&family=Urbanist:wght@100;200;400;500;700&display=swap');
+
+/* header style */
+.header-container{
+    height: 5hv;
+    background-color:rgba(229,224,229,255);
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1%;
+}
+.header-container .logo{
+    margin-right: auto;
+
+}
+.header-container .logo a{
+    text-decoration: none;
+    color:#cd486f;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family:'Dancing Script', cursive;
+}
+.header-container .search input{
+    border-radius: 12px;
+    padding: 5px 20px;
+    width: 8rem;
+    border: none;
+}
+.header-container .search a:hover{
+    color: #cd486f;
+}
+.header-container .quick-access{
+    margin-left: 2rem;
+}
+.header-container .quick-access i{
+    margin-left: 1rem;
+    color:#282828	;
+}
+.header-container .quick-access i:hover{
+color:#cd486f;
+}
+.header-container .quick-access:last-child{
+    margin-right: 1rem;
+}
+
+
+/* navigation-bar style */
+#nav-list{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content:flex-start ;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid #071a22;
+    border-bottom: 1px solid #071a22;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+}
+#nav-list li{
+    list-style: none;
+    padding: 1rem;
+}
+#nav-list li a{
+text-decoration: none;
+color:#282828	;
+}
+#nav-list li a:hover{
+    color: #cd486f;
+}
+#nav-list .call-support{
+    margin-left: auto;
+    margin-right: 2rem;
+    font-weight: 200;
+    font-size: 0.85rem;
+    color: gray;
+}
+#nav-list .has-submenu{
+    margin-right: auto;
+    margin-left: 2rem;
+
+}
+ /* sub-menu */
+ 
+ #nav-list .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 0;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+#nav-list .submenu li {
+  border-bottom: 1px solid #071a22;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: left;
+}
+
+#nav-list .submenu li a {
+  display: block;
+  padding: 8px 16px;
+}
+.submenu.show {
+  display: block;
+}
+
+
+/* promotion style */
+
+ .promotion{
+     width: 100%;
+    height: 85vh;
+    background-image:url("https://i.postimg.cc/D0rd9gyj/lotus.jpg");
+    background-position:50% 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.promotion div{
+    position: absolute;
+    top:30%;
+    left:12%;
+}
+.promotion div h1{
+    font-size: 3rem;
+}
+.promotion div p{
+    font-weight: 200;
+}
+.promotion div p span{
+    color: #678a37;
+    font-weight: 700;
+}
+.promotion div button{
+    background-color: #678a37;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+}
+ /* benefits style */
+ .benefits{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 1%;
+    justify-content: center;
+
+ }
+.benefit{
+    display: flex;
+    flex-wrap: nowrap;   
+    justify-content:center;
+    align-items: center; 
+    width:30%;
+    font-weight: 200;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+.benefit i{
+    color:#678a37 ;
+    margin-right: 7%;
+    margin-left: 6%;
+}
+.safe-payments{
+    border-right: 1px solid #C0C0C0	;
+    border-left: 1px solid #C0C0C0	;
+    padding: 1% 2%;
+}
+
+
+
+
+/* sale products style */
+.sale-products{
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.sale-products .products{
+     background-repeat: no-repeat;
+    background-size: 100%;
+     width: 45%;
+    height: 90%;
+    padding: 1% 5%;
+    box-sizing: border-box;
+}
+.sale-products .big-sale {
+    background-image: url("https://i.postimg.cc/TPSn4SGq/feey-odr-Pm-EM8-N4-unsplash.jpg");
+    background-position: 50% 75%;
+
+
+}
+
+.sale-products .top{
+    background-image: url("https://i.postimg.cc/fRnF62Ws/margarita-terekhova-j3p-Z-RVk7-ZI-unsplash.jpg");
+    background-position: 100% 80%;
+}
+.sale-products .products a{
+    text-decoration: none;
+    border-bottom: 2px solid #678a37;
+    color:#282828;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+.sale-products .products a:hover{
+    color: #678a37;
+    font-weight: 400;
+}
+.sale-products .products:hover{
+    opacity: 0.92;
+}
+/* our product grid style  */
+.our-products{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.our-products a{
+    text-decoration: none;
+    margin-left: 2%;
+    color: #282828;
+}
+.our-products a:hover{
+    color: #678a37;
+}
+.our-products .plants{
+    margin: 1% 13%;
+     display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    
+}
+.our-products h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.our-products .plants .indoor{
+    margin: 1%;
+    width: 100%;
+    height: 90%;
+    line-height: 0.3rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+
+}
+.our-products .plants .indoor img{
+    width: 70%;
+    height: 75%;
+}
+.our-products .plants .rating-stars{
+    margin-top: 0.5rem;
+}
+.our-products .plants .rating-stars i{
+ color:#678a37;
+}
+.our-products .plants .price{
+    font-weight: 700;
+}
+
+/* slide-box style */
+.slide-container{
+    width: 100%;
+    height:60vh ;
+    text-align: center;
+    padding-top: 1%;
+    margin:1% 0 ;
+    position: relative;
+}
+.slides{
+    width: 70%;
+    height: 60vh;
+    margin: auto;
+   position: relative;
+     min-height:400px;
+/* ////////ezafe kardam */
+}
+.slide{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.slides .active{
+display: block;
+}
+.slides .profile img{
+    margin-top: 1%;   
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+
+}
+.slides .profile .user-id{
+    margin:0;
+font-weight: 700;
+font-size: 0.8rem;
+}
+.slide-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  padding: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 4rem;
+  opacity: 0.6;
+}
+.slide-button:hover{
+    opacity: 1;
+}
+
+.slides .next{
+right: 0;}
+.slides .prev{
+left: 0;}
+.comments {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+/* footer */
+footer{
+  width: 100%;
+  height: 30%;
+  margin-top: 2rem;
+
+}
+.footer-components{
+      display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    text-align: left;
+}
+footer .footer-components .component{
+    width: 20%;
+    height: 100%;
+    margin: 1%;
+}
+footer .contact{
+    text-align: center;
+}
+footer .contact i{
+    color:#282828	;
+
+}
+footer .logo-footer i{
+color: #cd486f;
+}
+footer ul li{
+    list-style: none;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+footer ul li h4{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+footer ul li a{
+    text-decoration:none ;
+    color: #282828	;
+
+
+}
+footer a i:hover , a:hover{
+    color: #cd486f;
+}
+footer .copyright{
+    text-align: center;
+    font-size: 0.8rem;
+}
+/* scroll to top */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #678a37;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
+}
+
+#scrollToTopBtn i {
+  margin-top: 4px;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #cd486f;
+}
+
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+  /* Header */
+  .header-container .search input {
+    width: 100%;
+  }
+
+  /* Navigation Bar */
+   #nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #nav-list li {
+    flex: 0 0 50%;
+    text-align: center;
+  }
+ 
+  #nav-list li:first-child {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+  #nav-list li:last-child {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+  /* Promotion Section */
+   .promotion {
+    position: relative;
+  }
+   .promotion > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .promotion div h1 {
+    font-size: 2rem;
+  }
+
+  .promotion div p {
+    font-size: 0.9rem;
+  }
+
+  .promotion div button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+    /* Sale Products Section */
+  .sale-products .products {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 70px 0; 
+
+  }
+
+  .top.products {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 70px 0; 
+  }
+ .products h5,h2,a {
+    text-align: left; 
+  }
+
+  /* Benefits Section */
+  .benefits {
+    flex-direction: column;
+  }
+
+  .benefit {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Sale Products Section */
+  .sale-products {
+    flex-direction: column;
+  }
+
+  .sale-products .products {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .sale-products .products h2 {
+    font-size: 1.2rem;
+  }
+
+  .sale-products .products a {
+    font-size: 0.9rem;
+  }
+
+  /* Our Products Section */
+  .our-products {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .our-products .plants {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1%;
+  }
+
+  .our-products .plants .indoor {
+    margin: 1%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  /* Slide Container */
+  .slide-container {
+    height: auto;
+
+    padding-top: 5%;
+    margin-top: 30%;
+
+  }
+  
+   .slide-container h2 {
+    text-align: center;
+  }
+  .slide-button {
+    font-size: 2rem;
+    padding: 8px;
+  }
+
+  /* Footer */
+  footer .footer-components {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .component {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer ul li {
+    text-align: center;
+  }
+
+  footer .contact {
+    margin-top: 2%;
+  }
+
+  footer .logo-footer i {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media Query for screens between 760px and 1023px */
+@media (min-width: 760px) and (max-width: 1023px) {
+  /* Header */
+  .header-container .search input {
+    width: 70%;
+  }
+
+  /* Promotion Section */
+  .promotion div {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .promotion div h1 {
+    font-size: 3rem;
+  }
+
+  .promotion div p {
+    font-size: 1.2rem;
+  }
+
+  .promotion div button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+  }
+
+  /* Sale Products Section */
+  .sale-products .products {
+    width: 80%;
+    height: auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .sale-products .products h2 {
+    font-size: 2rem;
+  }
+
+  .sale-products .products a {
+    font-size: 1rem;
+  }
+
+  /* Our Products Section */
+  .our-products .plants {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+  }
+
+  /* Slide Container */
+  .slide-container {
+    height: auto;
+    padding-top: 5%;
+    margin-top: 20%;
+  }
+
+  .slide-button {
+    font-size: 3rem;
+    padding: 12px;
+  }
+}
+
+
+
+/* Media Query for screens between 1026px and up */
+@media (min-width: 1026px)  {
+  .big-sale.products {
+    background-size: 120%;
+  }
+  .slide-container {
+    height: auto;
+  }
+
+  .our-products {
+    height: auto;
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
+
+  
+
+}
